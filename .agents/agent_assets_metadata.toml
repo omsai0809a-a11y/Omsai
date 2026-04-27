@@ -1,0 +1,56 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "co7kVXm1-Jdo7_o-4gPKh"
+uri = "file://artifacts/om-sai-enterprises/public/images/hero.png"
+type = "image"
+title = "Hero Indian Living Room"
+
+[[generated]]
+id = "Wy495WjKUjEfFZdmCv6ir"
+uri = "file://artifacts/om-sai-enterprises/public/images/gallery/kitchen.png"
+type = "image"
+title = "Luxurious Modular Kitchen"
+
+[[generated]]
+id = "PrSgMjZJn8fyQ9mrsx4vt"
+uri = "file://artifacts/om-sai-enterprises/public/images/gallery/bedroom.png"
+type = "image"
+title = "Elegant Master Bedroom"
+
+[[generated]]
+id = "t0YPAwPN6cOVTrSKub5Ig"
+uri = "file://artifacts/om-sai-enterprises/public/images/gallery/ceiling.png"
+type = "image"
+title = "Contemporary False Ceiling"
+
+[[generated]]
+id = "wEVLDMcLVL_sT4IlYRsAA"
+uri = "file://artifacts/om-sai-enterprises/public/images/gallery/tv-wall.png"
+type = "image"
+title = "Marble TV Wall"
+
+[[generated]]
+id = "L49oTIHpRLAqAyF53y8tQ"
+uri = "file://artifacts/om-sai-enterprises/public/images/gallery/office.png"
+type = "image"
+title = "Modern Office Interior"
+
+[[generated]]
+id = "m9O_aXcAXO1OT9KMmFzMv"
+uri = "file://artifacts/om-sai-enterprises/public/images/gallery/dining.png"
+type = "image"
+title = "Elegant Dining Area"
+
+[[generated]]
+id = "_nbOyp_BQBWPmLjzQHSe2"
+uri = "file://artifacts/om-sai-enterprises/public/images/gallery/bathroom.png"
+type = "image"
+title = "Luxurious Bathroom"
+
+[[generated]]
+id = "aY3xUc50dF5vMgR1mtIBm"
+uri = "file://artifacts/om-sai-enterprises/public/images/gallery/entryway.png"
+type = "image"
+title = "Welcoming Entryway"
