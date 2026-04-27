@@ -27,6 +27,36 @@ const testimonials = [
     location: "Rewa",
     text: "I was looking for affordable yet premium interior designers, and Yash's team exceeded my expectations. They handled everything from material selection to final execution smoothly.",
     rating: 5
+  },
+  {
+    name: "Priya K.",
+    location: "Rewa",
+    text: "The acoustic wall paneling they installed in our office is stunning. Not only does it look modern and vibrant, but it has also drastically improved sound quality during meetings. True professionals.",
+    rating: 5
+  },
+  {
+    name: "Amit J.",
+    location: "Satna",
+    text: "We hired OM SAI ENTERPRISES for our corporate reception and the moss feature wall has become the talking point of every visitor. The execution and attention to detail were beyond our expectations.",
+    rating: 5
+  },
+  {
+    name: "Sneha P.",
+    location: "Rewa",
+    text: "From the geometric wall panels to the false ceiling, every element in our home was finished perfectly. Yash personally ensured that the colors and textures matched our vision. Five stars!",
+    rating: 5
+  },
+  {
+    name: "Manoj D.",
+    location: "Rewa",
+    text: "Excellent service and timely delivery. Their team set up beautiful pinboard acoustic panels in our school classrooms, making them lively and functional. Great quality at a fair price.",
+    rating: 5
+  },
+  {
+    name: "Kavita G.",
+    location: "Sidhi",
+    text: "Our lobby was redesigned with arched accent panels and new carpeting, and the result is breathtaking. The team is honest, hard-working, and incredibly creative. Strongly recommended.",
+    rating: 5
   }
 ];
 

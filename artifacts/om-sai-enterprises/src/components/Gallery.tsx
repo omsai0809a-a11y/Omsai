@@ -16,6 +16,11 @@ import img11 from "@assets/IMG-20260426-WA0011_1777264282802.jpg";
 import img12 from "@assets/IMG-20260426-WA0012_1777264282834.jpg";
 import img13 from "@assets/IMG-20260426-WA0013_1777264282859.jpg";
 import img14 from "@assets/IMG-20260427-WA0014_1777267263572.jpg";
+import img15 from "@assets/IMG-20260427-WA0013_1777301718737.jpg";
+import img16 from "@assets/IMG-20260427-WA0010_1777301718786.jpg";
+import img17 from "@assets/IMG-20260427-WA0017_1777301718808.jpg";
+import img18 from "@assets/IMG-20260427-WA0014_1777301718816.jpg";
+import img19 from "@assets/IMG-20260427-WA0015_1777301718824.jpg";
 
 const galleryImages = [
   { id: 1, src: img1, alt: "Premium office corridor with marble flooring", title: "Corporate Office Interior" },
@@ -24,6 +29,11 @@ const galleryImages = [
   { id: 4, src: img2, alt: "Conference room with triangular LED ceiling", title: "Conference Room Design" },
   { id: 5, src: img7, alt: "Acoustic arch wall with warm accent colors", title: "Accent Wall Design" },
   { id: 13, src: img14, alt: "Textured wall paneling with arched accent design", title: "Designer Wall Paneling" },
+  { id: 14, src: img15, alt: "Geometric acoustic wall panels in green and teal", title: "Geometric Acoustic Wall" },
+  { id: 15, src: img16, alt: "Corporate reception with green moss feature wall", title: "Corporate Reception Design" },
+  { id: 16, src: img17, alt: "Colorful pinboard acoustic panels in purple, orange and yellow", title: "Pinboard Acoustic Panels" },
+  { id: 17, src: img18, alt: "Modern lobby with arched accent panels and carpet flooring", title: "Modern Lobby Interior" },
+  { id: 18, src: img19, alt: "Two-tone slatted acoustic wall panel in teal and grey", title: "Slatted Acoustic Panels" },
   { id: 6, src: img11, alt: "Modern false ceiling with LED strip lighting", title: "Living Room False Ceiling" },
   { id: 7, src: img4, alt: "Premium washroom with mirror panel wall", title: "Luxury Washroom" },
   { id: 8, src: img13, alt: "Layered false ceiling with crystal chandelier", title: "Premium False Ceiling" },
