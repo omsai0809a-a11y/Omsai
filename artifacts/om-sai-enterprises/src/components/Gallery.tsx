@@ -1,17 +1,34 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ZoomIn } from "lucide-react";
 
+import img1 from "@assets/IMG-20260426-WA0001_1777264282677.jpg";
+import img2 from "@assets/IMG-20260426-WA0002_1777264282916.jpg";
+import img4 from "@assets/IMG-20260426-WA0004_1777264282712.jpg";
+import img5 from "@assets/IMG-20260426-WA0005_1777264282728.jpg";
+import img6 from "@assets/IMG-20260426-WA0006_1777264282750.jpg";
+import img7 from "@assets/IMG-20260426-WA0007_1777264282738.jpg";
+import img8 from "@assets/IMG-20260426-WA0008_1777264282769.jpg";
+import img9 from "@assets/IMG-20260426-WA0009_1777264282784.jpg";
+import img10 from "@assets/IMG-20260426-WA0010_1777264282897.jpg";
+import img11 from "@assets/IMG-20260426-WA0011_1777264282802.jpg";
+import img12 from "@assets/IMG-20260426-WA0012_1777264282834.jpg";
+import img13 from "@assets/IMG-20260426-WA0013_1777264282859.jpg";
+
 const galleryImages = [
-  { id: 1, src: "/images/gallery/kitchen.png", alt: "Luxurious Modular Kitchen", title: "Modern Modular Kitchen" },
-  { id: 2, src: "/images/gallery/bedroom.png", alt: "Elegant Master Bedroom", title: "Master Bedroom Design" },
-  { id: 3, src: "/images/gallery/ceiling.png", alt: "Contemporary False Ceiling", title: "False Ceiling Details" },
-  { id: 4, src: "/images/gallery/tv-wall.png", alt: "Marble TV Wall", title: "Living Room TV Unit" },
-  { id: 5, src: "/images/gallery/office.png", alt: "Modern Office Interior", title: "Corporate Office Space" },
-  { id: 6, src: "/images/gallery/dining.png", alt: "Elegant Dining Area", title: "Dining Room Setup" },
-  { id: 7, src: "/images/gallery/bathroom.png", alt: "Luxurious Bathroom", title: "Premium Bathroom Design" },
-  { id: 8, src: "/images/gallery/entryway.png", alt: "Welcoming Entryway", title: "Foyer Entrance" },
+  { id: 1, src: img1, alt: "Premium office corridor with marble flooring", title: "Corporate Office Interior" },
+  { id: 2, src: img5, alt: "Modern modular kitchen with grey cabinetry", title: "Modular Kitchen Design" },
+  { id: 3, src: img8, alt: "Curved POP false ceiling with cove lighting", title: "Designer False Ceiling" },
+  { id: 4, src: img2, alt: "Conference room with triangular LED ceiling", title: "Conference Room Design" },
+  { id: 5, src: img7, alt: "Acoustic arch wall with warm accent colors", title: "Accent Wall Design" },
+  { id: 6, src: img11, alt: "Modern false ceiling with LED strip lighting", title: "Living Room False Ceiling" },
+  { id: 7, src: img4, alt: "Premium washroom with mirror panel wall", title: "Luxury Washroom" },
+  { id: 8, src: img13, alt: "Layered false ceiling with crystal chandelier", title: "Premium False Ceiling" },
+  { id: 9, src: img6, alt: "Wood and fabric office wall paneling", title: "Office Wall Paneling" },
+  { id: 10, src: img9, alt: "Geometric POP ceiling with blue accents", title: "Geometric POP Ceiling" },
+  { id: 11, src: img12, alt: "Decorative carved POP ceiling design", title: "Carved POP Ceiling" },
+  { id: 12, src: img10, alt: "Circular false ceiling with cove lighting", title: "Circular Ceiling Design" },
 ];
 
 export function Gallery() {
@@ -23,10 +40,10 @@ export function Gallery() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-3">Our Portfolio</h2>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-primary">
-            Featured Projects
+            Our Recent Projects
           </h3>
           <p className="mt-4 text-muted-foreground text-lg">
-            A glimpse into the beautiful spaces we've crafted for our clients.
+            A glimpse into the beautiful spaces we've crafted for our clients across Rewa.
           </p>
         </div>
 
@@ -44,6 +61,7 @@ export function Gallery() {
               <img
                 src={image.src}
                 alt={image.alt}
+                loading="lazy"
                 className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
