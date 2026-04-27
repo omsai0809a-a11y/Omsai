@@ -1,7 +1,7 @@
 import React from "react";
 import { ContactForm } from "./ContactForm";
-import { PHONE_NUMBER, WA_NUMBER, ADDRESS, MAP_EMBED_URL, MAP_LINK } from "@/lib/constants";
-import { MapPin, Phone, Clock, ExternalLink } from "lucide-react";
+import { PHONE_NUMBER, WA_NUMBER, ADDRESS, MAP_EMBED_URL, MAP_LINK, EMAIL } from "@/lib/constants";
+import { MapPin, Phone, Clock, ExternalLink, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -54,6 +54,18 @@ export function Contact() {
                       </Button>
                     </a>
                   </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary flex-shrink-0">
+                  <Mail className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-bold font-serif text-xl text-primary mb-1">Email Us</h4>
+                  <a href={`mailto:${EMAIL}`} className="text-muted-foreground leading-relaxed hover:text-primary transition-colors break-all">
+                    {EMAIL}
+                  </a>
                 </div>
               </div>
 

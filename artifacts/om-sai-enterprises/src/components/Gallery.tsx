@@ -15,6 +15,7 @@ import img10 from "@assets/IMG-20260426-WA0010_1777264282897.jpg";
 import img11 from "@assets/IMG-20260426-WA0011_1777264282802.jpg";
 import img12 from "@assets/IMG-20260426-WA0012_1777264282834.jpg";
 import img13 from "@assets/IMG-20260426-WA0013_1777264282859.jpg";
+import img14 from "@assets/IMG-20260427-WA0014_1777267263572.jpg";
 
 const galleryImages = [
   { id: 1, src: img1, alt: "Premium office corridor with marble flooring", title: "Corporate Office Interior" },
@@ -22,6 +23,7 @@ const galleryImages = [
   { id: 3, src: img8, alt: "Curved POP false ceiling with cove lighting", title: "Designer False Ceiling" },
   { id: 4, src: img2, alt: "Conference room with triangular LED ceiling", title: "Conference Room Design" },
   { id: 5, src: img7, alt: "Acoustic arch wall with warm accent colors", title: "Accent Wall Design" },
+  { id: 13, src: img14, alt: "Textured wall paneling with arched accent design", title: "Designer Wall Paneling" },
   { id: 6, src: img11, alt: "Modern false ceiling with LED strip lighting", title: "Living Room False Ceiling" },
   { id: 7, src: img4, alt: "Premium washroom with mirror panel wall", title: "Luxury Washroom" },
   { id: 8, src: img13, alt: "Layered false ceiling with crystal chandelier", title: "Premium False Ceiling" },

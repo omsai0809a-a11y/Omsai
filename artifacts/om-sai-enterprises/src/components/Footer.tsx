@@ -1,5 +1,5 @@
 import React from "react";
-import { SERVICES, PHONE_NUMBER, WA_NUMBER, ADDRESS } from "@/lib/constants";
+import { SERVICES, PHONE_NUMBER, WA_NUMBER, ADDRESS, EMAIL } from "@/lib/constants";
 import { Phone, MapPin, Mail, Instagram, Facebook } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -92,6 +92,12 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
                 <a href={`tel:${PHONE_NUMBER.replace(/\s+/g, '')}`} className="hover:text-white transition-colors">
                   {PHONE_NUMBER}
+                </a>
+              </li>
+              <li className="flex items-center gap-3 text-primary-foreground/70">
+                <Mail className="w-5 h-5 text-accent flex-shrink-0" />
+                <a href={`mailto:${EMAIL}`} className="hover:text-white transition-colors break-all">
+                  {EMAIL}
                 </a>
               </li>
               <li className="pt-2">

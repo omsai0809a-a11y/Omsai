@@ -12,6 +12,7 @@ export const SERVICES = [
 
 export const PHONE_NUMBER = "+91 97137 43651";
 export const WA_NUMBER = "919713743651";
+export const EMAIL = "ramyashv267@gmail.com";
 export const ADDRESS = "ke paas, Durga Mandir Airtel tower, mod, Chhatrapati Nagar, Gadariya, Rewa, Madhya Pradesh 486001";
 export const MAP_EMBED_URL = "https://www.google.com/maps?q=Chhatrapati+Nagar+Gadariya+Rewa+486001&output=embed";
 export const MAP_LINK = "https://maps.app.goo.gl/oqqFoR7rC3edW2it8";
