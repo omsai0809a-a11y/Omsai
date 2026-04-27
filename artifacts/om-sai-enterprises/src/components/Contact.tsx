@@ -1,7 +1,7 @@
 import React from "react";
 import { ContactForm } from "./ContactForm";
-import { PHONE_NUMBER, WA_NUMBER, ADDRESS, MAP_EMBED_URL } from "@/lib/constants";
-import { MapPin, Phone, Clock } from "lucide-react";
+import { PHONE_NUMBER, WA_NUMBER, ADDRESS, MAP_EMBED_URL, MAP_LINK } from "@/lib/constants";
+import { MapPin, Phone, Clock, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -113,6 +113,14 @@ export function Contact() {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="OM SAI ENTERPRISES Location"
               ></iframe>
+            </div>
+            <div className="mt-4">
+              <a href={MAP_LINK} target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Open in Google Maps
+                </Button>
+              </a>
             </div>
           </div>
 

@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "8+", label: "Years Experience" },
-  { value: "250+", label: "Projects Delivered" },
-  { value: "200+", label: "Happy Clients" },
+  { value: "10+", label: "Years Experience" },
+  { value: "150+", label: "Projects Delivered" },
+  { value: "100+", label: "Happy Clients" },
   { value: "5+", label: "Cities Served" },
 ];
 
@@ -40,10 +40,10 @@ export function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-card p-8 rounded-2xl border border-border/50 shadow-sm hover:shadow-md transition-shadow text-center"
+                className="bg-white aspect-square flex flex-col items-center justify-center p-8 rounded-2xl border border-border/40 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_32px_-8px_rgba(0,0,0,0.12)] transition-shadow text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold font-serif text-primary mb-2">{stat.value}</div>
-                <div className="text-sm font-medium text-muted-foreground uppercase tracking-wide">{stat.label}</div>
+                <div className="text-5xl md:text-6xl font-bold text-primary mb-3 leading-none">{stat.value}</div>
+                <div className="text-sm md:text-base font-medium text-muted-foreground uppercase tracking-wider leading-tight">{stat.label}</div>
               </motion.div>
             ))}
           </div>
