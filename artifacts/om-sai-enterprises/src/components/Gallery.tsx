@@ -21,6 +21,7 @@ import img16 from "@assets/IMG-20260427-WA0010_1777301718786.jpg";
 import img17 from "@assets/IMG-20260427-WA0017_1777301718808.jpg";
 import img18 from "@assets/IMG-20260427-WA0014_1777301718816.jpg";
 import img19 from "@assets/IMG-20260427-WA0015_1777301718824.jpg";
+import img20 from "@assets/IMG-20260427-WA0008_1777370104540.jpg";
 
 const galleryImages = [
   { id: 1, src: img1, alt: "Premium office corridor with marble flooring", title: "Corporate Office Interior" },
@@ -34,6 +35,7 @@ const galleryImages = [
   { id: 16, src: img17, alt: "Colorful pinboard acoustic panels in purple, orange and yellow", title: "Pinboard Acoustic Panels" },
   { id: 17, src: img18, alt: "Modern lobby with arched accent panels and carpet flooring", title: "Modern Lobby Interior" },
   { id: 18, src: img19, alt: "Two-tone slatted acoustic wall panel in teal and grey", title: "Slatted Acoustic Panels" },
+  { id: 19, src: img20, alt: "OM SAI ENTERPRISES team on-site at a corporate project", title: "Our Skilled Team On-Site" },
   { id: 6, src: img11, alt: "Modern false ceiling with LED strip lighting", title: "Living Room False Ceiling" },
   { id: 7, src: img4, alt: "Premium washroom with mirror panel wall", title: "Luxury Washroom" },
   { id: 8, src: img13, alt: "Layered false ceiling with crystal chandelier", title: "Premium False Ceiling" },
