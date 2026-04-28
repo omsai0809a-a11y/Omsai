@@ -17,12 +17,46 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { FaWhatsapp } from "react-icons/fa";
 import { SERVICES, WA_NUMBER } from "@/lib/constants";
 
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  phone: z.string().min(10, { message: "Please enter a valid phone number." }),
-  service: z.string().min(1, { message: "Please select a service." }),
-  message: z.string().optional(),
-});
+const sanitize = (input: string): string =>
+  input
+    .replace(/[\u0000-\u001F\u007F]/g, "")
+    .replace(/[<>]/g, "")
+    .trim()
+    .slice(0, 2000);
+
+const allowedServiceIds = SERVICES.map((s) => s.id) as [string, ...string[]];
+
+const formSchema = z
+  .object({
+    name: z
+      .string()
+      .trim()
+      .min(2, { message: "Name must be at least 2 characters." })
+      .max(80, { message: "Name is too long." })
+      .regex(/^[\p{L}\p{M}\s.''-]+$/u, {
+        message: "Name contains invalid characters.",
+      }),
+    phone: z
+      .string()
+      .trim()
+      .min(10, { message: "Please enter a valid phone number." })
+      .max(20, { message: "Phone number is too long." })
+      .regex(/^[+()\-\s\d]{10,20}$/, {
+        message: "Please enter a valid phone number.",
+      }),
+    service: z.enum(allowedServiceIds, {
+      message: "Please select a valid service.",
+    }),
+    message: z
+      .string()
+      .trim()
+      .max(1000, { message: "Message is too long (max 1000 characters)." })
+      .optional()
+      .or(z.literal("")),
+  })
+  .strict();
+
+const SAFE_WA_NUMBER = WA_NUMBER.replace(/\D/g, "");
 
 export function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
@@ -36,16 +70,22 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const serviceName = SERVICES.find(s => s.id === values.service)?.title || values.service;
-    
+    const safeName = sanitize(values.name);
+    const safePhone = sanitize(values.phone);
+    const safeMessage = values.message ? sanitize(values.message) : "";
+    const serviceName = sanitize(
+      SERVICES.find((s) => s.id === values.service)?.title || values.service,
+    );
+
     const message = `Hello, I want to inquire about interior design services.
-Name: ${values.name}
-Phone: ${values.phone}
+Name: ${safeName}
+Phone: ${safePhone}
 Service: ${serviceName}
-Message: ${values.message || "N/A"}`;
+Message: ${safeMessage || "N/A"}`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${WA_NUMBER}?text=${encodedMessage}`, '_blank');
+    const url = `https://wa.me/${SAFE_WA_NUMBER}?text=${encodedMessage}`;
+    window.open(url, "_blank", "noopener,noreferrer");
   }
 
   return (
